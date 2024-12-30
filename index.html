@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>Combat Strike 3</title>
+  
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+<div class = "firstIntro">
+  <button class = "play" onclick = "play()">Play</button>
+  <video class = "intro"></video>
+</div>
+<div class = "secondIntro">
+  <h1 class = "name">Combat Strike 3</h1>
+  <div class = "moveItem">
+     <p class="navigator" onclick="StoryMode()">Story Mode</p>
+     <p class="navigator" onclick="Menu()">Arcade Mode</p>
+     <p class="navigator" onclick = "close()">Exit</p>
+  </div>
+ 
+</div>
+
+<div class = "selectCharacter">
+  <h1 class = "h12">Select your character</h1>
+ <div class = "imageSelector grid-container">
+   <div class = "holder">Aerith</div>
+    <div class = "holder">Noctis</div>
+    <div class = "holder">Dain</div>
+    <div class = "holder">Riku</div>
+    <div class = "holder">Lily</div>
+    <div class = "holder">Dark</div>
+    <div class = "holder">Cloud</div>
+    <div class = "holder">Jean</div>
+    <div class = "holder">Tifa</div>
+    <div class = "holder">TifaA</div>
+    <div class = "holder">Reno</div>
+    <div class = "holder">Spear</div>
+    <div class = "holder">Li</div>
+    <div class = "holder">Cleric</div>
+    <div class = "holder">Chubi</div>
+    <img class = "displayCharacter">
+ </div>
+      <div class = "controls2">
+             <button class="left1"><i class="bi bi-arrow-left"></i></button>
+             <button class="right1"><i class="bi bi-arrow-right"></i></button>
+             <button class="enter"><i class="fas fa-bolt" onclick = "fetchCharacter()"></i></button>
+      </div>
+
+</div>
+
+<div class = "loader">
+  
+</div>
+
+<div class = "Game">
+  <!--Background-->
+  <div class = "backgroundImg">
+  <!--BackgroundEnd-->
+  
+  <!--Players-->
+  <div class = "player">
+    <h2 class = "playerDamage"></h2>
+    <img class = "player1" src = "assests/img/335000305 Standby.gif">
+    <h2 class = "playerName"></h2>
+  </div>
+  
+  <div class = "enemy">
+    <h2 class = "AiDamage"></h2>
+    <img class = "enemy1" src = "assests/img/Sephiroth_5.gif">
+    <h2 class = "AiName"></h2>
+  </div>
+  
+  <div class = "blink"></div>
+  <!--playersEnd-->
+  
+  <!--Controls-->
+  <div class = "controls">
+    
+    <div class = "AiHp">
+      <div id = "bar1"></div>
+    </div>
+    
+    
+    
+    <button class = "menu"><i class = "fas fa-list"</i></i></button>
+    <button class = "left"><i class = "bi bi-arrow-left"></i></button>
+    <button class = "right"><i class = "bi bi-arrow-right"></i></button>
+    
+    
+    <div class="playerBar">
+        <div id = "bar2"></div>
+    </div>
+    
+  <button class="attack"><i class="fas fa-bolt" onclick = "normalAttack()"></i></button>
+    <button class="skills"><i class="fas fa-sun"></i></button>
+    <button class="items"><i class="fas fa-flask"></i></button>
+  </div>
+  </div>
+  <!--ControlsEnd-->
+  
+</div>
+
+  <script src="main.js"></script>
+
+</body>
+</html>
+
